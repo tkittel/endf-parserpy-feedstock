@@ -16,7 +16,7 @@ build:
   entry_points:
     - endf-cli = endf_parserpy.cli.cmd:cli_interface
   script: python -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -29,13 +29,14 @@ requirements:
     - cmake
     - make  # [unix]
   host:
+    - python
+    - pip
     - setuptools >=58.0.0,<69.0.0
     - pybind11 >=2.10.0
     - poetry-core
     - poetry-dynamic-versioning >=1.3
     - lark >=1.0.0
     - appdirs >=1.4.0
-    - pip
   run:
     - python
     - lark >=1.0.0
