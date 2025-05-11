@@ -1,5 +1,5 @@
 {% set name = "endf-parserpy" %}
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: endf-parserpy
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/endf_parserpy-{{ version }}.tar.gz
-  sha256: 560552e2e7849d509bd249631fd297e8e6b287b58d0053d3ea11fd927a5eb49d
+  sha256: 76f38e6ac617f963782301c978fba08ddb7ed9ec628988de5251944d0561988f
 
 build:
   script_env:
