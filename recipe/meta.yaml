@@ -29,11 +29,13 @@ requirements:
     - cmake
     - make  # [unix]
     - platformdirs >=4.3.6
+    - setuptools_scm
     - pip
   host:
     - python
     - pip
     - setuptools >=64.0.0,<77.0.0
+    - setuptools_scm
     - pybind11 >=2.10.0
     - platformdirs >=4.3.6
     - lark >=1.0.0
