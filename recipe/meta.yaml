@@ -29,6 +29,7 @@ requirements:
     - cmake
     - make  # [unix]
     - platformdirs >=4.3.6
+    - pip
   host:
     - python
     - pip
