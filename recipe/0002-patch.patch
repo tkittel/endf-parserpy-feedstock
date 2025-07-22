@@ -1,0 +1,26 @@
+From ba037ff22b14cc943be752acde2694b01d13aed0 Mon Sep 17 00:00:00 2001
+From: Thomas Kittelmann <thomas.kittelmann@ess.eu>
+Date: Tue, 22 Jul 2025 09:21:04 +0200
+Subject: [PATCH] patch2
+
+---
+ setup.py | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/setup.py b/setup.py
+index 31ed069..76fe5ff 100644
+--- a/setup.py
++++ b/setup.py
+@@ -174,6 +174,9 @@ def main():
+         ext_modules=ext_modules,
+         zip_safe=False,
+         include_package_data=True,
++        package_data={
++            'endf-parserpy': ['*.hpp','*.cpp'],
++        },
+         install_requires=[
+             "lark>=1.0.0",
+             "platformdirs>=4.3.6",
+-- 
+2.43.0
+
