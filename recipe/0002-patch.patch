@@ -16,7 +16,7 @@ index 31ed069..76fe5ff 100644
          zip_safe=False,
          include_package_data=True,
 +        package_data={
-+            'endf-parserpy': ['*.hpp','*.cpp'],
++            'endf-parserpy': ['**/*.hpp','**/*.cpp'],
 +        },
          install_requires=[
              "lark>=1.0.0",
