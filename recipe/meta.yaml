@@ -28,6 +28,11 @@ requirements:
     - {{ compiler('cxx') }}
     - cmake
     - make  # [unix]
+    - pip
+    - setuptools >=64.0.0,<77.0.0
+    - pybind11 >=2.10.0
+    - platformdirs >=4.3.6
+    - lark >=1.0.0
   host:
     - python
     - pip
@@ -39,6 +44,8 @@ requirements:
     - python
     - lark >=1.0.0
     - platformdirs >=4.3.6
+    - setuptools >=64.0.0,<77.0.0
+    - pybind11 >=2.10.0
 
 test:
   requires:
