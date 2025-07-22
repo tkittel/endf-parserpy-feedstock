@@ -8,9 +8,8 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/endf_parserpy-{{ version }}.tar.gz
   sha256: 80151e594f99e7227bf87a209204f584ba0db789e035c96f32f4b3f9764d4a9e
-
-patches:
-  - 0001-patch.patch
+  patches:
+    - 0001-patch.patch
 
 
 build:
