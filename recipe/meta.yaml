@@ -1,5 +1,5 @@
 {% set name = "endf-parserpy" %}
-{% set version = "0.13.1" %}
+{% set version = "0.14.2" %}
 
 package:
   name: endf-parserpy
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/endf_parserpy-{{ version }}.tar.gz
-  sha256: 76f38e6ac617f963782301c978fba08ddb7ed9ec628988de5251944d0561988f
+  sha256: 80151e594f99e7227bf87a209204f584ba0db789e035c96f32f4b3f9764d4a9e
 
 build:
   script_env:
@@ -16,7 +16,7 @@ build:
   entry_points:
     - endf-cli = endf_parserpy.cli.cmd:cli_interface
   script: python -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   build:
@@ -31,16 +31,14 @@ requirements:
   host:
     - python
     - pip
-    - setuptools >=58.0.0,<69.0.0
+    - setuptools >=64.0.0,<77.0.0
     - pybind11 >=2.10.0
-    - poetry-core
-    - poetry-dynamic-versioning >=1.3
+    - platformdirs >=4.3.6
     - lark >=1.0.0
-    - appdirs >=1.4.0
   run:
     - python
     - lark >=1.0.0
-    - appdirs >=1.4.0
+    - platformdirs >=4.3.6
 
 test:
   requires:
